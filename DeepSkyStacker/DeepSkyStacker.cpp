@@ -1,18 +1,22 @@
-// DeepSkyStacker.cpp : Defines the entry point for the console application.
+﻿// DeepSkyStacker.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
+#include "SetUILanguage.h"
 #include "DeepSkyStacker.h"
 #include "DeepStack.h"
 #include "DeepStackerDlg.h"
 #include "Registry.h"
 #include <gdiplus.h>
+#include "Ztrace.h"
+#include "resource.h"
 using namespace Gdiplus;
 #include <afxinet.h>
 #include "StackingTasks.h"
 #include "StackRecap.h"
 #include "cgfiltyp.h"
-#include "SetUILanguage.h"
+
+
 
 #pragma comment(lib, "gdiplus.lib")
 
@@ -306,7 +310,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance,  // handle to current instance
 
 	ZTRACE_RUNTIME("Set UI Language");
 
-	SetUILanguage();
+	SetUILanguage(LANG_JAPANESE);
 
 	ZTRACE_RUNTIME("Set UI Language - ok");
 

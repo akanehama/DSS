@@ -220,7 +220,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>.\Debug/DeepSkyStackerv8.pch</PrecompiledHeaderOutputFile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -265,11 +265,12 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -432,6 +433,9 @@
     <ResourceCompile Include="DeepSkyStackerES.rc" />
     <ResourceCompile Include="DeepSkyStackerFR.rc" />
     <ResourceCompile Include="DeepSkyStackerIT.rc" />
+    <ResourceCompile Include="DeepSkyStackerJA.rc">
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">0x0011</Culture>
+    </ResourceCompile>
     <ResourceCompile Include="DeepSkyStackerNL.rc" />
     <ResourceCompile Include="DeepSkyStackerPTB.rc" />
     <ResourceCompile Include="DeepSkyStackerRO.rc" />

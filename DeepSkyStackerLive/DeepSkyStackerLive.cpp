@@ -1,4 +1,4 @@
-// DeepSkyStackerLive.cpp : Defines the class behaviors for the application.
+﻿// DeepSkyStackerLive.cpp : Defines the class behaviors for the application.
 //
 
 #include "stdafx.h"
@@ -106,7 +106,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance,  // handle to current instance
 
 	OleInitialize(NULL);
 
-	SetUILanguage();
+	SetUILanguage(LANG_JAPANESE);
 
 	#ifndef NOGDIPLUS
 	GdiplusStartupInput		gdiplusStartupInput;

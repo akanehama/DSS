@@ -212,6 +212,8 @@ BOOL CAbout::OnInitDialog()
 		m_Language.SetCurSel(12);
 	else if (!strLanguage.CompareNoCase(_T("TR")))
 		m_Language.SetCurSel(13);
+	else if (!strLanguage.CompareNoCase(_T("JA")))
+		m_Language.SetCurSel(14);
 	else
 		m_Language.SetCurSel(0);
 
@@ -275,6 +277,9 @@ void CAbout::OnOK()
 		break;
 	case 13 :
 		reg.SaveKey(REGENTRY_BASEKEY, _T("Language"), _T("TR"));
+		break;
+	case 14:
+		reg.SaveKey(REGENTRY_BASEKEY, _T("Language"), _T("JA"));
 		break;
 	};
 

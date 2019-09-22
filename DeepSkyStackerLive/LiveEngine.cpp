@@ -1,7 +1,8 @@
-#include <stdafx.h>
+﻿#include <stdafx.h>
 #include "LiveEngine.h"
 #include "RegisterEngine.h"
 #include "TIFFUtil.h"
+#include "SetUILanguage.h"
 
 #define _USE_MATH_DEFINES
 #include <cmath>
@@ -12,7 +13,7 @@ const DWORD				WM_LE_MESSAGE		= WM_USER+1;
 #define M_PI			3.141592654
 #endif
 
-extern void	SetUILanguage();
+//extern void	SetUILanguage();
 
 /* ------------------------------------------------------------------- */
 
@@ -21,7 +22,7 @@ DWORD	WINAPI	LiveEngineThreadProc(LPVOID lpParameter)
 	DWORD						dwResult = 0;
 	CLiveEngine *				pLiveEngine = reinterpret_cast<CLiveEngine *>(lpParameter);
 
-	SetUILanguage();
+	SetUILanguage(LANG_JAPANESE);
 	if (pLiveEngine)
 		pLiveEngine->LiveEngine();
 

@@ -1,4 +1,4 @@
-// DeepSkyStackerCL.cpp : Defines the entry point for the console application.
+﻿// DeepSkyStackerCL.cpp : Defines the entry point for the console application.
 //
 
 #include <stdafx.h>
@@ -261,7 +261,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	OleInitialize(NULL);
 
-	SetUILanguage();
+	SetUILanguage(LANG_JAPANESE);
 
 	#ifndef NOGDIPLUS
 	GdiplusStartupInput		gdiplusStartupInput;
