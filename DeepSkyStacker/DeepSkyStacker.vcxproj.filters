@@ -1015,6 +1015,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="res\Turkish.png" />
+    <Image Include="res\japan.png">
+      <Filter>Tools</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\Tools\RichToolTipCtrl.h">

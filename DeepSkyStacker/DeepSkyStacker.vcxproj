@@ -627,6 +627,7 @@
     <Image Include="res\ImageList_Mask.bmp" />
     <Image Include="res\intersectionmode.bmp" />
     <Image Include="res\Italian.png" />
+    <Image Include="res\japan.png" />
     <Image Include="res\lightfra.ico" />
     <Image Include="res\lightframe.ico" />
     <Image Include="res\linear.bmp" />
